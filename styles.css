@@ -187,11 +187,11 @@ body {
   margin: 0;
 }
 
-.services-grid-card h2, .services-grid-card h4 {
+/* .services-grid-card h2, .services-grid-card h4 {
   padding: 8px 0;
-} 
+}  */
 
-hr {
+/* hr {
   border:none;
   height: 20px;
  	width: 100%;
@@ -200,7 +200,7 @@ hr {
 	border-bottom: 0px solid #1f1209;
 	box-shadow: 0 10px 5px -10px #333; 
 }
-  
+   */
 
 .footer {  
   display: grid;
