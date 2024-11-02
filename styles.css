@@ -1,0 +1,243 @@
+* {
+  /* margin: 0; */
+  /* padding: 15px; */
+  /* box-sizing: border-box; */
+}
+html {
+  scroll-behavior: smooth; }
+
+:root {
+  /* Colour variables */
+  --codex-black: #0D0011;
+  --codex-white: #FFFFFF;
+  --codex-purple: #903348;
+
+  /* font variables */
+  --font-24px: 24px;
+  --font-18px: 18px;
+  --font-16px: 16px;
+  --font-14px: 14px;
+  --font-11px: 11px;
+
+  --meno-banner: "meno-banner", serif;
+  --montserrat: "montserrat", sans-serif;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+
+body {
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  /* margin: 50px 70px 0px 70px; */
+  min-width:90%;
+  min-height:90%;
+  margin-top: 0%;
+}
+
+/* styling menu icon */
+.nav-menu{
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a{
+  color: black;
+  position: relative;
+}
+.navbar-nav a:hover{
+  color: #fca61f;
+}
+.navbar-nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  top: 35px;
+  position: absolute;
+  background: #fca61f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+/* styling contact btn  */
+.c-btn{
+  border: none;
+  background: #fca61f;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Home section */
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .container{
+      margin: 0;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+  
+  .container{
+      margin: 0;
+  }
+  
+  .nav div.logo{
+      margin-left: 15px;
+  }
+  
+  .nav div.main_list{
+      width: 100%;
+      margin-top: 65px;
+      height: 0px;
+      overflow: hidden;
+  }
+  
+  .nav div.show_list{
+      height: 200px;
+  }
+  
+  .nav div.main_list ul{
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      top: 80px;
+      right: 0;
+      left: 0;
+  }
+  
+  .nav div.main_list ul li{
+      width: 100%;
+      height: 40px;
+      background-color:rgba(0,0,255,0.8);
+  }
+  
+  .nav div.main_list ul li a{
+    text-align: center;
+      line-height: 40px;
+      width: 100%;
+      height: 40px;
+      display: table;
+  }
+  
+  .nav div.media_button{
+      display: block;
+  }
+}
+
+.header-image {
+  max-width: 100%;
+  padding: 0px 0;
+  border-radius: 8px;
+}
+
+.home-heading  {
+  padding: 10px 0;
+}
+
+.services-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+  width: 100%;
+  margin: 0px;
+  overflow: visible;
+  padding: 10px 0px 30px 0px;
+}
+
+.services-grid-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 1fr; 
+  z-index: -1;
+}
+
+.service-card-text {
+  font-weight: var(--fw-regular);
+  margin-top: 40px;
+  padding-top: 8px;   
+
+}
+
+.service-card-title {
+  color: var(--codex-purple);
+  position: absolute;
+  top: 1fr;
+  left: 2fr;
+  margin: 0;
+}
+
+.services-grid-card h2, .services-grid-card h4 {
+  padding: 8px 0;
+} 
+
+hr {
+  border:none;
+  height: 20px;
+ 	width: 100%;
+	height: 30px;
+	margin-top: 50px;
+	border-bottom: 0px solid #1f1209;
+	box-shadow: 0 10px 5px -10px #333; 
+}
+  
+
+.footer {  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding:  1.5rem 0rem 0rem 0rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-item {
+  color: var(--codex-black);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding: 0.5rem 0rem;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  padding: 1rem 0rem;
+  width: 2rem;
+  height: 2rem; 
+}
+
+#footer-logo {
+  margin-right: 1%;
+  padding: 5% 0;
+  display: flex;
+  width: 30%;
+}
+ 
+#footer-end {
+  color: hsl(0, 0%, 69%);
+  padding-top: 5% 0;
+  position: absolute;
+  margin: auto;
+}
