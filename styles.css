@@ -22,9 +22,8 @@ html {
 }
 
 body {
-  font-family: var(--montserrat);
+  font-family: montserrat;
   font-size: 1rem;
-  /* margin: 50px 70px 0px 70px; */
   min-width:90%;
   min-height:90%;
   margin-top: 0%;
@@ -35,15 +34,17 @@ body {
   border: none;
   background-color: #fff;
   font-size: 1.5rem;
-  color: #fca61f;
+  color: #726a5e;
 }
 /* styling navbar links  */
 .navbar-nav a{
   color: black;
   position: relative;
+  font-size: large;
 }
 .navbar-nav a:hover{
   color: var(--codex-purple);
+  font-style: bold;
 }
 .navbar-nav a:after {    
   background: none repeat scroll 0 0 transparent;
@@ -68,6 +69,9 @@ body {
   background: #fca61f;
   color: #fff;
   font-size: 1.2rem;
+}
+.codex-nav-logo {
+  width: 10%;
 }
 
 /* Home section */
