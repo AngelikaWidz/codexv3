@@ -21,6 +21,10 @@ html {
   --fw-regular: 400;
 }
 
+section {
+  padding: 0em 2em;
+}
+
 body {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
