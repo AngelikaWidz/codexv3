@@ -99,13 +99,22 @@ body {
 
 .services-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   gap: 50px;
   width: 100%;
   margin: 0px;
   overflow: visible;
   padding: 10px 0px 30px 0px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 0em 1em;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .services-grid-card {
@@ -115,8 +124,6 @@ body {
   justify-content: flex-start;
   height: 1fr; 
   z-index: -1;
-  border:1px solid black;
-  border-radius: 15px;
   padding: 20px;
 }
 
@@ -135,11 +142,33 @@ body {
   margin: 0;
 }
 
+.service-card-desc li::before {
+  content: "•";
+  color: var(--codex-purple);
+  font-size: 1.5em;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.service-card-desc li{
+  color: var(--codex-black);
+  /* margin-left: -50px; */
+  font-size: 16px;
+}
+
+#Prawo_Pracy {
+  background-color: #fca61f;
+}
+
+#Prawo_Kontraktowe {
+  background-color: #fca61f;
+}
+
 .footer {  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding:  1.5rem 0rem 0rem 0rem;
+  padding: 0em 2em;
   position: relative;
   width: 100%;
   box-sizing: border-box;
