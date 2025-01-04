@@ -129,6 +129,7 @@ body {
 
 .service-card-text {
   font-weight: var(--fw-regular);
+  color: var(--codex-white);
   margin-top: 40px;
   padding-top: 8px;   
 
@@ -150,10 +151,25 @@ body {
   width: 1em;
   margin-left: -1em;
 }
+
 .service-card-desc li{
   color: var(--codex-black);
   /* margin-left: -50px; */
   font-size: 16px;
+}
+
+.service-button {
+  background-color: var(--codex-purple);
+  color: var(--codex-white);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 #Prawo_Pracy {
