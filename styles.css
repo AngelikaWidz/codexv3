@@ -107,7 +107,7 @@ main {
   padding: 20px 0;
 }
 
-.home-heading h2 {
+.home-heading {
   padding: 20px 0;
 }
 
@@ -184,14 +184,6 @@ main {
   cursor: pointer;
   border-radius: 5px;
 }
-
-/* #Prawo_Pracy {
-  background-color: #fca61f;
-}
-
-#Prawo_Kontraktowe {
-  background-color: #fca61f;
-} */
 
 
 /* Contact form start */
@@ -414,9 +406,9 @@ font-style: normal;
       display: table;
   }
   
-  .nav div.media_button{
+  /* .nav div.media_button{
       display: block;
-  }
+  } */
 }
 
 
