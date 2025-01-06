@@ -111,24 +111,27 @@ main {
   padding: 20px 0;
 }
 
+
 .services-grid-container {
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(1, 1fr); */
   gap: 20px;
   width: 100%;
-  margin: 0px;
-  overflow: visible;
+  /* overflow: visible; */
   padding: 10px 0px 30px 0px;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   padding: 0em 1em;
   position: relative;
   width: 100%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  
 }
 
 .services-grid-card {
@@ -138,7 +141,10 @@ main {
   justify-content: flex-start;
   height: 1fr; 
   z-index: -1;
-  padding: 0px;
+  padding: 20px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .service-card-text {
@@ -187,6 +193,14 @@ main {
 
 
 /* Contact form start */
+
+.contact-heading {
+  padding: 20px 0;
+}
+
+.contact-subheading {
+  padding: 20px 0;
+}
 
 .contact{
   /* display: flex;
@@ -412,7 +426,6 @@ font-style: normal;
 }
 
 
-/* service grid */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .services-grid-container {
     display: grid;
