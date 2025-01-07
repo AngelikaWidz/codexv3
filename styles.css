@@ -27,7 +27,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 0em 5em; */
+  padding: 0em 5em;
 }
 
 /* styling menu icon */
@@ -65,47 +65,33 @@ main {
   left: 0; 
 }
 
-/* styling contact btn  */
-/* .c-btn{
-  border: none;
-  background: #fca61f;
-  color: #fff;
-  font-size: 1.2rem;
-} */
-
 .codex-nav-logo {
   width: 10%;
 }
 
 /* Home section */
 
-/* .home{
-  width: 100%;
-  height: 100vh;
-  background-color: #ddd;
-} */
+.home-heading{
+  max-width: 100%;
+  background-color: var(--codex-purple);
+  color: var(--codex-white);
+  margin: 0px 0px;
+  padding: 20px 50px;
+
+}
 
 .header-image {
   max-width: 100%;
-  padding: 10px 0;
+  padding: 0 0 0 0;
   vertical-align: top;
-}
-
-
-.home-heading {
-  background-color: var(--codex-purple);
 }
 
 .home-heading p{
   color: var(--codex-white);
 }
 
-.contact-heading  {
-  padding: 20px 0;
-}
-
-.home-heading .services-grid .contact {
-  padding: 300px 0;
+.services-heading {
+  padding: 1em 0 0px 0;
 }
 
 .services-grid-container {
@@ -127,7 +113,6 @@ main {
   position: relative;
   width: 100%;
   /* box-sizing: border-box; */
-  
 }
 
 .services-grid-card {
@@ -195,14 +180,6 @@ main {
 
 .contact-subheading {
   padding: 20px 0;
-}
-
-.contact{
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0em 2em; */
 }
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
