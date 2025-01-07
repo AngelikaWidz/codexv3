@@ -76,7 +76,7 @@ main {
   background-color: var(--codex-purple);
   color: var(--codex-white);
   margin: 0px 0px;
-  padding: 20px 50px;
+  padding: 20px 100px;
 
 }
 
@@ -91,28 +91,22 @@ main {
 }
 
 .services-heading {
-  padding: 1em 0 0px 0;
+  padding: 2em 0 1em 0;
 }
 
 .services-grid-container {
-  margin-left: auto;
-  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(1, 1fr); */
   gap: 20px;
   width: 100%;
-  /* overflow: visible; */
-  padding: 10px 0px 30px 0px;
+  overflow: visible;
+  padding: 10px 0px 0px 0px;
 }
 
 .service-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  padding: 0em 1em;
   position: relative;
   width: 100%;
-  /* box-sizing: border-box; */
 }
 
 .services-grid-card {
@@ -122,8 +116,7 @@ main {
   justify-content: flex-start;
   height: 1fr; 
   z-index: -1;
-  padding: 20px;
-  /* border: 1px solid blue; */
+  padding: 0px;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -143,18 +136,17 @@ main {
   left: 2fr;
   margin: 0;
 }
-
+/* 
 .service-card-desc li::before {
   color: var(--codex-purple);
   font-size: 1.5em;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
+} */
 
 .service-card-desc li{
   color: var(--codex-black);
-  /* margin-left: -50px; */
   font-size: 16px;
 }
 
@@ -174,20 +166,20 @@ main {
 
 /* Contact form start */
 
-.contact-heading {
-  padding: 20px 0;
-}
-
 .contact-subheading {
-  padding: 20px 0;
+  color: var(--codex-purple);
+  font-size: 32px;
+  line-height: 150%;
+
+  padding: 0 0 0 0;
 }
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
   font-size: 0.75em;
   color: #999;
   top: -5px;
-  /* -webkit-transition: all 0.225s ease;
-  transition: all 0.225s ease; */
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
 }
 
 .styled-input {
