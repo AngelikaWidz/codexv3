@@ -245,7 +245,6 @@ textarea {
 }
 
 .submit-btn {
-  float: right;
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
@@ -332,69 +331,11 @@ font-style: normal;
 
 /* Media queries */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  
-  .container{
-      margin: 0;
-  }
-  
-}
-
-@media screen and (max-width:768px) {
-  
-  .container{
-      margin: 0;
-  }
-  
-  .nav div.logo{
-      margin-left: 15px;
-  }
-  
-  .nav div.main_list{
-      width: 100%;
-      margin-top: 65px;
-      height: 0px;
-      overflow: hidden;
-  }
-  
-  .nav div.show_list{
-      height: 200px;
-  }
-  
-  .nav div.main_list ul{
-      flex-direction: column;
-      width: 100%;
-      height: 200px;
-      top: 80px;
-      right: 0;
-      left: 0;
-  }
-  
-  .nav div.main_list ul li{
-      width: 100%;
-      height: 40px;
-      background-color:rgba(0,0,255,0.8);
-  }
-  
-  .nav div.main_list ul li a{
-    text-align: center;
-      line-height: 40px;
-      width: 100%;
-      height: 40px;
-      display: table;
-  }
-  
-  /* .nav div.media_button{
-      display: block;
-  } */
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/* @media screen and (min-width:375px) and (max-width: 768px) {
   .services-grid-container {
+    text-align: center;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
     margin: 0px;
@@ -412,4 +353,40 @@ font-style: normal;
     z-index: -1;
     padding: 0px;
   }
+} */
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  
+  .home-heading {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  
+  .services-grid-container {
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 0px;
+    overflow: visible;
+    padding: 10px 0px 30px 0px;
+    margin: auto;
+  }
+
+  .services-grid-card  .service-card-desc {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1fr; 
+    z-index: -1;
+    padding: 0px;
+  }
+  .service-card-desc li{
+    margin: 0px 0px 0px 20px;
+  }
+
 }
